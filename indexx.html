@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mangement System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>cruds</h1>
+            <p>Product mangement system</p>
+        </div>
+        <div class="title">
+            <input type="text" placeholder="Title" id='title'>
+        </div>
+        <div class="price">
+            <input onkeyup="clacPrice()"  onmouseup="clacPrice()"   type="number" placeholder="Price" id='price' >
+            <input onkeyup="clacPrice()"  onmouseup="clacPrice()"   type="number" id='recharge' placeholder="Taxes">
+            <input onkeyup="clacPrice()"  onmouseup="clacPrice()"   type="number" id='payment' placeholder="ads">
+            <input onkeyup="clacPrice()"  onmouseup="clacPrice()"   type="number" id='discount' placeholder="discount">
+            <button id="btn-price" Total:>0</button>
+        </div>
+        <div class="count">
+            <input type="number" placeholder="count" id='count'>
+        </div>
+        <div class="catogry">
+            <input type="text" placeholder="catogray" id='catogray'>
+        </div>
+        <div class="create">
+            <input type="submit" value="Create" id='create'>
+        </div>
+        <div class="search">
+            <input onkeyup="searchData(this.value)" type="search" placeholder="Search" id='search'>
+            <input onclick="searchItem(this.id)" type="submit" value="Search by Title" id='search-title'>
+            <input onclick="searchItem(this.id)" type="submit" value="Search by Catogray" id='search-catogray'>
+        </div>
+        <div class="delete">
+            <input type="submit" value="Delete All" id='deleteAll' >
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>Ads</th>
+                    <th>discount</th>
+                    <th>Catogray</th>
+                    <th>Total</th>
+                    <th>delete</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody id='newline'>
+             
+         
+            </tbody>
+        </table>
+   
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="learn.js"></script>
+    <!-- onclick='even.src=this.src' -->
+</body>
+</html>
